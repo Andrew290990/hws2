@@ -55,27 +55,6 @@ function HW2() {
 
     let filteredAffairs = filterAffairs(affairs, filter)
     
-
-//- - - - -- - - - - - -- - - - -- -- -- - - - - - - - - - - -
-   
-    
-    // if(filter ==='high'){
-    //     filteredAffairs = affairs.filter(el=> el.priority === 'high')
-    // }
-    // if(filter ==='middle'){
-    //     filteredAffairs = affairs.filter(el=> el.priority === 'middle')
-    // }
-    // if(filter ==='low'){
-    //     filteredAffairs= affairs.filter(el=> el.priority === 'low')
-    // }
-
-  
-   
-   // = - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-
- 
-
     let deleteAffairCallback = (_id:number) => { // need to fix any
         
         setAffairs(deleteAffair(affairs,_id))
