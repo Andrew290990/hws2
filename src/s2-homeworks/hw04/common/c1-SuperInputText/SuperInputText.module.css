@@ -1,20 +1,25 @@
-.input:focus {
+.input:focus, .errorInput:focus {
+    outline:none;
 }
-
-.input {
+.input, .superInput {
+    box-sizing: border-box;
+    width:372px;
+    height:36px;
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
 }
-
 .inputWrapper {
+    display: flex;
+    flex-direction: column;
 }
-
-.superInput {
-}
-
 .errorInput {
+    border: 1px solid #CC1439;
 }
-
-.errorInput:focus {
-}
-
 .error {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #CC1439;
 }
